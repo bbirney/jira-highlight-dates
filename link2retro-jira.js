@@ -11,8 +11,6 @@
 
 
 (function() {
-    let done = false;
-
     const checkStringInURL = async (url, stringToCheck) => {
         try {
             const response = await fetch(url, {
