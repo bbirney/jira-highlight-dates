@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         Jira Sprint Board Enhancements
+// @name         Jira Sprint Board Highlight Dates
 // @namespace    http://tampermonkey.net/
-// @version      1.0
+// @version      2.0
 // @description  Make important dates more prominent on Jira sprint board
 // @author       ben.b
 // @match        *://prodege.atlassian.net/jira/software/c/projects/DIS/boards/130*
