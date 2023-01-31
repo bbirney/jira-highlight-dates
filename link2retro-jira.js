@@ -5,12 +5,14 @@
 // @description  Make important dates more prominent on Jira sprint board
 // @author       ben.b
 // @match        *://prodege.atlassian.net/jira/software/c/projects/DIS/boards/130*
-// @downloadURL https://raw.githubusercontent.com/bbirney/tampermonkey-scripts/main/link2retro-jira.js
-// @updateURL   https://raw.githubusercontent.com/bbirney/tampermonkey-scripts/main/link2retro-jira.js
+// @downloadURL https://raw.githubusercontent.com/bbirney/tampermonkey-scripts/efdd031f851a52ace35c237a2e29e0a7a1c8629c/link2retro-jira.js
+// @updateURL   https://raw.githubusercontent.com/bbirney/tampermonkey-scripts/efdd031f851a52ace35c237a2e29e0a7a1c8629c/link2retro-jira.js
 // ==/UserScript==
 
 
 (function() {
+    let done = false;
+
     const checkStringInURL = async (url, stringToCheck) => {
         try {
             const response = await fetch(url, {
@@ -60,13 +62,11 @@
         // Create the button
         const button = document.createElement("button");
         button.innerText = "Easy Retro";
-        button.style.backgroundColor = "#5AAC44";
-        button.style.color = "white";
-        button.style.padding = "10px 20px";
         button.style.borderRadius = "5px";
         button.style.cursor = "pointer";
         button.style.margin = "10px 10px 0 0";
         button.style.display = "inline-block";
+        button.classList.add("aui-button");
         button.onclick = () => window.open(link, "_blank");
 
         // Append the button to the span with the class ".subnav-container"
