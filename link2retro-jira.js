@@ -5,8 +5,8 @@
 // @description  Make important dates more prominent on Jira sprint board
 // @author       ben.b
 // @match        *://prodege.atlassian.net/jira/software/c/projects/DIS/boards/130*
-// @downloadURL https://raw.githubusercontent.com/bbirney/tampermonkey-scripts/efdd031f851a52ace35c237a2e29e0a7a1c8629c/link2retro-jira.js
-// @updateURL   https://raw.githubusercontent.com/bbirney/tampermonkey-scripts/efdd031f851a52ace35c237a2e29e0a7a1c8629c/link2retro-jira.js
+// @downloadURL https://raw.githubusercontent.com/bbirney/tampermonkey-scripts/main/link2retro-jira.js
+// @updateURL   https://raw.githubusercontent.com/bbirney/tampermonkey-scripts/main/link2retro-jira.js
 // ==/UserScript==
 
 
